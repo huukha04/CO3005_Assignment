@@ -1,0 +1,168 @@
+[
+  {
+    "source": "",
+    "expected": "EOF"
+  },
+  {
+    "source": "\t",
+    "expected": "\t,EOF"
+  },
+  {
+    "source": "\f",
+    "expected": "\f,EOF"
+  },
+  {
+    "source": "\r",
+    "expected": "\r,EOF"
+  },
+  {
+    "source": "\n",
+    "expected": "\n,EOF"
+  },
+  {
+    "source": "\" \"",
+    "expected": " ,EOF"
+  },
+  {
+    "source": "\"ab c\"",
+    "expected": "ab c,EOF"
+  },
+  {
+    "source": "\"hello world\"",
+    "expected": "hello world,EOF"
+  },
+  {
+    "source": "\"this is a long string with spaces\"",
+    "expected": "this is a long string with spaces,EOF"
+  },
+  {
+    "source": "\"line1 line2 line3\"",
+    "expected": "line1 line2 line3,EOF"
+  },
+  {
+    "source": "\"multiple   spaces   inside\"",
+    "expected": "multiple   spaces   inside,EOF"
+  },
+  {
+    "source": "\"special_chars_123 !@#\"",
+    "expected": "special_chars_123 !@#,EOF"
+  },
+  {
+    "source": "\"a\tb\"",
+    "expected": "a\tb,EOF"
+  },
+  {
+    "source": "\"line1\\nline2\"",
+    "expected": "line1\\nline2,EOF"
+  },
+  {
+    "source": "\"tab\\tnewline\\nend\"",
+    "expected": "tab\\tnewline\\nend,EOF"
+  },
+  {
+    "source": "\"mix of spaces and\\ttabs\"",
+    "expected": "mix of spaces and\\ttabs,EOF"
+  },
+  {
+    "source": "\"first\\nsecond\\nthird\"",
+    "expected": "first\\nsecond\\nthird,EOF"
+  },
+   {
+    "source": "\"abc_def\"",
+    "expected": "abc_def,EOF"
+  },
+  {
+    "source": "\"var_123_name\"",
+    "expected": "var_123_name,EOF"
+  },
+  {
+    "source": "\"hello_world\\t2025\"",
+    "expected": "hello_world\\t2025,EOF"
+  },
+  {
+    "source": "\"line_one\\nline_two\"",
+    "expected": "line_one\\nline_two,EOF"
+  },
+  {
+    "source": "\"mix_letters123_and_symbols_!@#\"",
+    "expected": "mix_letters123_and_symbols_!@#,EOF"
+  },
+  {
+    "source": "\"long_string_with_multiple_parts\\tpart2\\npart3\"",
+    "expected": "long_string_with_multiple_parts\\tpart2\\npart3,EOF"
+  },
+
+
+
+
+  {
+    "source": "0",
+    "expected": "0,EOF"
+  },
+  {
+    "source": "123",
+    "expected": "123,EOF"
+  },
+  {
+    "source": "0.1",
+    "expected": "0.1,EOF"
+  },
+  {
+    "source": "123.456",
+    "expected": "123.456,EOF"
+  },
+  {
+    "source": "0.1e1",
+    "expected": "0.1e1,EOF"
+  },
+  {
+    "source": "0.1e-1",
+    "expected": "0.1e-1,EOF"
+  },
+  {
+    "source": "3.14E10",
+    "expected": "3.14E10,EOF"
+  },
+  {
+    "source": "2e10",
+    "expected": "2e10,EOF"
+  },
+  {
+    "source": "2E-10",
+    "expected": "2E-10,EOF"
+  },
+  {
+    "source": "2E+10",
+    "expected": "2E+10,EOF"
+  },
+  {
+    "source": "5.",
+    "expected": "5.,EOF"
+  },
+  {
+    "source": ".5",
+    "expected": "Error Token .5"
+  },
+  {
+    "source": "5e",
+    "expected": "Error Token 5e"
+  },
+  
+  {
+    "source": "5e-",
+    "expected": "Error Token 5e-"
+  },
+
+
+
+
+
+
+  {
+    "source": "\"test\"",
+    "expected": "test,EOF"
+  }
+
+]
+
+
